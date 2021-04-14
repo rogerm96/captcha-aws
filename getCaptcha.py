@@ -1,5 +1,3 @@
-#https://www.youtube.com/watch?v=C6qjpR4WlV8
-#https://www.youtube.com/watch?v=Rdd_xEMwCGk
 import time
 from PIL import Image
 from selenium import webdriver
