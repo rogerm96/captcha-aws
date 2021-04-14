@@ -11,7 +11,7 @@ x = 1
 
 while x <= 1000:
 
-    browser = webdriver.Chrome(executable_path=r"/home/rhino/opt/chromedriver")
+    browser = webdriver.Chrome(executable_path=r"/driver/chromedriver")
 
     browser.get('http://contribuyente.seniat.gob.ve/iseniatlogin/contribuyente.do')
 
