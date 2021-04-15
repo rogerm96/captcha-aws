@@ -14,6 +14,8 @@ while x <= 1:
 
     browser.get('http://contribuyente.seniat.gob.ve/iseniatlogin/contribuyente.do')
 
+    time.sleep(15)
+
     captcha = browser.find_element_by_id('kaptchaImage')
 
     screenshot = captcha.screenshot_as_png
