@@ -10,12 +10,10 @@ x = 1
 
 while x <= 1:
 
-    chrome_options = Options()
-    chrome_options.add_argument('--headless')
-    chrome_options.add_argument('--no-sandbox')
-    chrome_options.add_argument('--disable-dev-shm-usage')
+    options = webdriver.ChromeOptions()
+    options.add_argument('--headless')
 
-    browser = webdriver.Chrome(executable_path="./driver/chromedriver", chrome_options=chrome_options)
+    browser = webdriver.Chrome(executable_path=r"./driver/chromedriver", options=options)
 
     browser.get('http://contribuyente.seniat.gob.ve/iseniatlogin/contribuyente.do')
 
