@@ -15,7 +15,7 @@ while x <= 1:
     chrome_options.add_argument('--no-sandbox')
     chrome_options.add_argument('--disable-dev-shm-usage')
 
-    browser = webdriver.Chrome(executable_path=r"./driver/chromedriver", chrome_options=chrome_options)
+    browser = webdriver.Chrome(executable_path="./driver/chromedriver", chrome_options=chrome_options)
 
     browser.get('http://contribuyente.seniat.gob.ve/iseniatlogin/contribuyente.do')
 
