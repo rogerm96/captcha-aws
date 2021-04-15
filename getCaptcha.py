@@ -13,7 +13,7 @@ while x <= 1:
     options = webdriver.ChromeOptions()
     options.add_argument('--headless')
 
-    browser = webdriver.Chrome(executable_path=r"./driver/chromedriver", options=options)
+    browser = webdriver.Chrome(executable_path=r"/driver/chromedriver", options=options)
 
     browser.get('http://contribuyente.seniat.gob.ve/iseniatlogin/contribuyente.do')
 
