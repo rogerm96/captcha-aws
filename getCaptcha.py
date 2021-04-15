@@ -3,19 +3,14 @@ import PIL
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.chrome.options import Options
-from webdriver_manager.chrome import ChromeDriverManager
 
 
 x = 1
 
 while x <= 1:
 
-    options = webdriver.ChromeOptions()
-    options.add_argument('--headless')
-
-    browser = webdriver.Chrome(ChromeDriverManager().install())
-    #browser = webdriver.Chrome(executable_path=r"/driver/chromedriver", options=options)
+    #browser = webdriver.Chrome(ChromeDriverManager().install())
+    browser = webdriver.Chrome(executable_path=r"./driver/chromedriver")
 
     browser.get('http://contribuyente.seniat.gob.ve/iseniatlogin/contribuyente.do')
 
