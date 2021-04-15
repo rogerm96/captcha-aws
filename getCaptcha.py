@@ -26,6 +26,6 @@ while x <= 1:
 
     time.sleep(2)
 
-    #browser.close()
+    browser.close()
 
     x+=1
