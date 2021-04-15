@@ -24,7 +24,7 @@ while x <= 1:
     img = img.resize((200, 50), Image.ANTIALIAS)
     img.save('captcha%s.png' % x)
 
-    time.sleep(2)
+    time.sleep(5)
 
     browser.close()
 
